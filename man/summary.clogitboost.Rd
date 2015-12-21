@@ -2,11 +2,11 @@
 \alias{summary.clogitboost}
 
 \title{
-summary methods for clogitboost objects
+Summary after fitting a boosting conditional logit model
 }
 
 \description{
-  \code{summary} methods for the \code{clogitboost} objects
+  \code{summary} methods for the \code{clogitboost} objects.
 }
   
 \usage{
@@ -14,7 +14,7 @@ summary methods for clogitboost objects
 }
 
 \arguments{
-    \item{object}{object resulting from the \code{\link{clogitboost}} function.
+    \item{object}{output object from the \code{\link{clogitboost}} function.
         }
     
     \item{\dots}{not currently used.}
@@ -24,9 +24,9 @@ summary methods for clogitboost objects
 
 \value{
 The function \code{clogitboost()} returns the following list of values:
-\item{call}{the original function call.}
-\item{infscore}{the relative influence scores}
-\item{loglike}{the sequence of fitted values of log-likelihood.}
+\item{call}{original function call.}
+\item{infscore}{relative influence score for each covariate.}
+\item{loglike}{sequence of the fitted values of log-likelihood.}
 
 
 }

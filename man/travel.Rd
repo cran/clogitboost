@@ -4,18 +4,18 @@
 \title{Australian travel mode choice data}
 
 \description{
-The dataset is a survey results of 210 individuals' choices of travel mode between Sydney, Melbourne and New South Wales. There are four alternative choices, along with four choice-specific covaraites for each choice.}
+The dataset is a survey result of 210 individuals' choices of travel mode between Sydney, Melbourne and New South Wales. There are four alternative choices, along with four choice-specific covaraites for each choice.}
 
-\usage{data(travel)}
+\usage{data("travel")}
 \format{
   A data frame with 840 observations on the following 6 variables.
   \describe{
-    \item{\code{Group}}{index of the group membership}
+    \item{\code{Group}}{index of the group membership.}
     \item{\code{MODE}}{binary outcome of whether the item is chosen.}
-    \item{\code{TTME}}{the terminal time}
-    \item{\code{INVC}}{the in-vehicle cost}
-    \item{\code{INVT}}{the amount of time spent traveling}
-    \item{\code{GC}}{the genearlized cost of travel}
+    \item{\code{TTME}}{terminal time.}
+    \item{\code{INVC}}{in-vehicle cost.}
+    \item{\code{INVT}}{amount of time spent traveling.}
+    \item{\code{GC}}{genearlized cost of travel.}
   }
 }
 

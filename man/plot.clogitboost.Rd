@@ -2,11 +2,11 @@
 \alias{plot.clogitboost}
 
 \title{
-Plot methods for clogitboost objects
+Plotting after fitting a boosting conditional logit model
 }
 
 \description{
-  \code{plot} methods for the \code{clogitboost} objects, which produce marginal plots of the covaraite effects
+  \code{plot} methods for the \code{clogitboost} objects, which produce marginal plots of the covariate effects.
 }
   
 \usage{
@@ -14,11 +14,11 @@ Plot methods for clogitboost objects
 }
 
 \arguments{
-    \item{x}{object resulting from the \code{\link{clogitboost}} function.
+    \item{x}{output object from the \code{\link{clogitboost}} function.
         }
-    \item{d}{the dimension of the covariate to be plotted}
-\item{grid}{the grid of values for plotting. If it is not specified, then the minimal and maximal elements in the covariate will be used as the two ends of the grid}
-    \item{\dots}{other options for plotting}
+    \item{d}{integer indicating which covariate is used.}
+\item{grid}{grid of values for plotting. If it is not specified, the minimal and maximal elements of the covariate are used as the two endpoints of the grid.}
+    \item{\dots}{other options for plotting.}
 }
 \author{
 Haolun Shi \email{shl2003@connect.hku.hk}

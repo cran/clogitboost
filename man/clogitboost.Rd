@@ -7,29 +7,29 @@
 }
 
 \usage{
-clogitboost(y, x, strata, iter = 100, rho = 0.05)
+clogitboost(y, x, strata, iter, rho)
 }
 
 \arguments{
-  \item{y}{a vector of binary outcomes.
+  \item{y}{vector of binary outcomes.
 }
-  \item{x}{a matrix or data frame with each column being a covariate.}
- \item{strata}{a vector of group membership, i.e., items in the same group have the same value.}
+  \item{x}{matrix or data frame with each column being a covariate.}
+ \item{strata}{vector of group membership, i.e., items in the same group have the same value.}
  \item{iter}{number of iterations.}
- \item{rho}{the learning rate parameter in the boosting algorithm.}
+ \item{rho}{learning rate parameter in the boosting algorithm.}
 }
 
 \value{
-The function \code{clogitboost()} returns the following list of values:
-\item{call}{the original function call.}
-\item{func}{the list of fitted spline functions.}
-\item{index}{the list of indexes indicating which covariate is used as input for the spline models.}
-\item{theta}{the list of fitted coefficients in the conditional logit models.}
-\item{loglike}{the sequence of fitted values of log-likelihood.}
-\item{infscore}{the relative influence scores}
-\item{rho}{the learning rate parameter}
-\item{mmax}{the maximal element in each covariate}
-\item{mmin}{the minimal element in each covariate}
+The function \code{clogitboost} returns the following list of values:
+\item{call}{original function call.}
+\item{func}{list of fitted spline functions.}
+\item{index}{list of indices indicating which covariate is used as input for the smoothing spline.}
+\item{theta}{list of fitted coefficients in the conditional logit models.}
+\item{loglike}{sequence of fitted values of log-likelihood.}
+\item{infscore}{relative influence score for each covariate.}
+\item{rho}{learning rate parameter, which typically takes a value of 0.05 or 0.1.}
+\item{xmax}{maximal element of each covariate.}
+\item{xmin}{minimal element of each covariate.}
 
 }
 

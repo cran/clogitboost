@@ -1,5 +1,5 @@
 
-clogitboost <- function(y, x, strata, iter = 100, rho = 0.05){
+clogitboost <- function(y, x, strata, iter, rho){
   x <- as.matrix(x)
   y <- as.numeric(y)
   fit <- fitclogitboost(y, x, strata, iter, rho)

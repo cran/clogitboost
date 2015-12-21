@@ -2,11 +2,11 @@
 \alias{marginal}
 
 \title{
-marginal utility for clogitboost objects
+Marginal utility for clogitboost objects
 }
 
 \description{
-  \code{marginal} function for the \code{clogitboost} objects, which produce the marginal utility values of a covaraite
+  \code{marginal} function for the \code{clogitboost} objects, which produces the marginal utility values of a covariate.
 }
   
 \usage{
@@ -15,10 +15,10 @@ marginal(x, grid, d)
 }
 
 \arguments{
-   \item{x}{object resulting from the \code{\link{clogitboost}} function.
+   \item{x}{output object from the \code{\link{clogitboost}} function.
         }
-    \item{d}{the dimension of the covariate}
-\item{grid}{the grid of values for predicting the marginal utilities}
+    \item{d}{integer indicating which covariate is used.}
+\item{grid}{grid of values for predicting the marginal utilities.}
 }
 
 

@@ -1,12 +1,10 @@
 \name{predict.clogitboost}
 \alias{predict.clogitboost}
 
-\title{
-predict methods for clogitboost objects
-}
+\title{Predicting after fitting a boosting conditional logit model}
 
 \description{
-  \code{predict} methods for the \code{clogitboost} objects, which produce marginal predicts of the covaraite effects
+  \code{predict} methods for the \code{clogitboost} objects, which produce marginal predictions of the covariate effects.
 }
   
 \usage{
@@ -14,19 +12,19 @@ predict methods for clogitboost objects
 }
 
 \arguments{
-    \item{object}{object resulting from the \code{\link{clogitboost}} function.
+    \item{object}{output object from the \code{\link{clogitboost}} function.
         }
-     \item{x}{a new matrix or data frame with each column being a covariate.}
- \item{strata}{a new vector of group membership, i.e., items in the same group have the same value.}
+     \item{x}{new matrix or data frame with each column being a covariate.}
+ \item{strata}{new vector of group memberships, i.e., items in the same group have the same value.}
     \item{\dots}{not currently used.}
 }
 
 
 \value{
 The method \code{predict} returns the following list of values:
-\item{prob}{the probability of the outcome being equal to 1.}
-\item{utility}{the predicted utility.}
-\item{prediction}{the 0-1 prediction of the outcome variable.}
+\item{prob}{probability of the outcome equal to 1.}
+\item{utility}{predicted utility.}
+\item{prediction}{0-1 prediction of the outcome variable.}
 
 
 }
